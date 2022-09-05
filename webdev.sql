@@ -56,10 +56,7 @@ CREATE TABLE `employee` (
   `birthday` date NOT NULL,
   `gender` varchar(10) NOT NULL,
   `contact` varchar(20) NOT NULL,
-  `nid` int(20) NOT NULL,
   `address` varchar(100) DEFAULT NULL,
-  `dept` varchar(100) NOT NULL,
-  `degree` varchar(100) NOT NULL,
   `pic` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -96,10 +93,7 @@ INSERT INTO `employee_leave` (`id`, `token`, `start`, `end`, `reason`, `status`)
 (101, 301, '2019-04-07', '2019-04-08', 'Sick Leave', 'Approved'),
 (102, 305, '2019-04-07', '2019-04-08', 'Urgent Family Cause', 'Approved'),
 (103, 306, '2019-04-08', '2019-04-08', 'Concert Tour', 'Approved'),
-(101, 307, '2019-04-14', '2019-04-30', 'Want to see GOT', 'Pending'),
-(105, 308, '2019-04-26', '2019-04-30', 'Launching Tesla Model Y', 'Pending'),
-(111, 309, '2019-04-09', '2019-04-13', 'Visit to Kings Landing', 'Pending'),
-(104, 310, '2019-04-08', '2019-04-09', 'Emergency Leave', 'Pending');
+(101, 307, '2019-04-14', '2019-04-30', 'Want to see GOT', 'Pending');
 
 -- --------------------------------------------------------
 
@@ -124,17 +118,8 @@ CREATE TABLE `project` (
 INSERT INTO `project` (`pid`, `eid`, `pname`, `duedate`, `subdate`, `mark`, `status`) VALUES
 (213, 101, 'Database', '2019-04-07', '2019-04-04', 10, 'Submitted'),
 (214, 102, 'Test', '2019-04-10', '0000-00-00', 0, 'Due'),
-(215, 105, 'Tesla Model Y', '2019-04-19', '2019-04-06', 10, 'Submitted'),
-(216, 106, 'Hack', '2019-05-04', '2019-04-05', 5, 'Submitted'),
-(217, 111, 'Do Nothing', '2019-04-02', '2019-04-01', 8, 'Submitted'),
-(218, 105, 'Tesla Model X', '2019-04-03', '2019-04-03', 10, 'Submitted'),
 (219, 101, 'PHP', '2019-04-07', '0000-00-00', 0, 'Due'),
-(220, 110, 'Data Analysis', '2019-04-16', '2019-04-04', 8, 'Submitted'),
-(221, 110, 'Data Analysis', '2019-04-16', '2019-04-04', 7, 'Submitted'),
-(222, 103, 'Statistical', '2019-04-19', '2019-04-04', 6, 'Submitted'),
-(223, 108, 'Software Scema', '2019-04-09', '2019-04-02', 3, 'Submitted'),
-(224, 107, 'Security Check', '2019-04-26', '2019-04-05', 9, 'Submitted'),
-(225, 109, 'ML', '2019-04-03', '2019-04-04', 6, 'Submitted');
+(222, 103, 'Statistical', '2019-04-19', '2019-04-04', 6, 'Submitted');
 
 -- --------------------------------------------------------
 
@@ -154,15 +139,7 @@ CREATE TABLE `rank` (
 INSERT INTO `rank` (`eid`, `points`) VALUES
 (101, 10),
 (102, 0),
-(103, 6),
-(104, 0),
-(105, 20),
-(106, 5),
-(107, 9),
-(108, 3),
-(109, 6),
-(110, 15),
-(111, 8);
+(103, 6));
 
 -- --------------------------------------------------------
 
@@ -184,15 +161,7 @@ CREATE TABLE `salary` (
 INSERT INTO `salary` (`id`, `base`, `bonus`, `total`) VALUES
 (101, 55000, 10, 60500),
 (102, 16500, 0, 16500),
-(103, 65000, 6, 68900),
-(104, 78000, 0, 78000),
-(105, 105000, 20, 126000),
-(106, 60000, 5, 63000),
-(107, 77000, 9, 83930),
-(108, 50000, 3, 51500),
-(109, 85000, 6, 90100),
-(110, 47000, 15, 54050),
-(111, 45000, 8, 48600);
+(103, 65000, 6, 68900);
 
 --
 -- Indexes for dumped tables
