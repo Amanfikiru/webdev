@@ -6,7 +6,7 @@ body{
 }
 
 header{
-	background: black;
+	background: orange;
 	color: white;
 	padding: 8px 20px 6px 40px;
 	height: 50px;
@@ -73,7 +73,7 @@ nav ul ul{
 }
 
 .homeblack:hover{
-	background-color: blue;
+	background-color: black;
 	padding: 30px 10px 21px 10px;
 
 }
@@ -132,7 +132,7 @@ nav ul ul{
 
 .table-emp tr th {
   background-color: #4CAF50;
-  color: white;
+  color: orange;
 }
 
 
